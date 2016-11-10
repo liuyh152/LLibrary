@@ -74,7 +74,6 @@ ItemListAdapter代码
 
 		@Override
 		protected View onLoadingViewCrate(int viewType) {
-			// TODO Auto-generated method stub
 			return super.onLoadingViewCrate(viewType);
 		}
 	
