@@ -2,8 +2,8 @@
 
 基础用法
 
-ItemListAdapter adapter = new ItemListAdapter(this, list);
-		new ViewHelper(this).id(id.listview_main).adapter(adapter).itemListener(new OnItemClickListener() {
+	ItemListAdapter adapter = new ItemListAdapter(this, list);
+	new ViewHelper(this).id(id.listview_main).adapter(adapter).itemListener(new OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
