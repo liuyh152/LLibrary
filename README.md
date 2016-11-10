@@ -52,31 +52,31 @@ Activity中：
 			}
 		});
 
-ItemListAdapter
+ItemListAdapter代码
 
 	public class ItemListAdapter extends BasePagingFrameAdapter<String> {
 
-	public ItemListAdapter(Context context, List<String> list) {
-		super(context, list);
-	}
+		public ItemListAdapter(Context context, List<String> list) {
+			super(context, list);
+		}
 
-	@Override
-	protected View onViewCreate(int position, LayoutInflater inflater, ViewGroup parent) {
-		return inflater.inflate(layout.adapter_itemlist_layout, parent, false);
-	}
+		@Override
+		protected View onViewCreate(int position, LayoutInflater inflater, ViewGroup parent) {
+			return inflater.inflate(layout.adapter_itemlist_layout, parent, false);
+		}
 
-	@Override
-	protected void onViewAttach(int position, String item, View convertView) {
-		// 新的ViewHolder, 使用方法参考这个
-		TextView bananaView = ViewHolder.get(convertView, id.title);
-		bananaView.setText(item);
-	}
+		@Override
+		protected void onViewAttach(int position, String item, View convertView) {
+			// 新的ViewHolder, 使用方法参考这个
+			TextView bananaView = ViewHolder.get(convertView, id.title);
+			bananaView.setText(item);
+		}
 
-	@Override
-	protected View onLoadingViewCrate(int viewType) {
-		// TODO Auto-generated method stub
-		return super.onLoadingViewCrate(viewType);
-	}
+		@Override
+		protected View onLoadingViewCrate(int viewType) {
+			// TODO Auto-generated method stub
+			return super.onLoadingViewCrate(viewType);
+		}
 	
-}
+	}
 
