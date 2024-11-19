@@ -9,7 +9,8 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name=".frame.adapter.com.liuyh.library.example.MainActivity">
+        <activity android:name=".frame.adapter.com.liuyh.library.example.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
